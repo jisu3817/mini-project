@@ -28,8 +28,8 @@ def plot_images(nRow, nCol, img):
 
 plot_images(3,5, face_images)
 ```
+<img width="527" alt="스크린샷 2022-11-10 오전 12 31 21" src="https://user-images.githubusercontent.com/79014269/200872233-c6dd5d2c-02b0-4422-8824-c5ed6ad35005.png">
 
-![스크린샷 2022-11-10 오전 12.20.30.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4934dc33-b116-4d49-8968-289be7d70673/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.20.30.png)
 
 ```python
 face_hogs = []
@@ -52,8 +52,8 @@ for i in range(3):
 ```
 
 결과 : (128,)
+<img width="521" alt="스크린샷 2022-11-10 오전 12 32 00" src="https://user-images.githubusercontent.com/79014269/200872345-cfb6cc4d-1375-4d0e-8a71-00d86208c095.png">
 
-![스크린샷 2022-11-10 오전 12.21.23.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35e6bde8-2ed3-4a40-8ffb-c6cfc69a5830/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.21.23.png)
 
 ```python
 url = 'https://github.com/dknife/ML/raw/main/data/Proj2/animals/'
@@ -69,7 +69,8 @@ for i in range(15):
 plot_images(3, 5, animal_images)
 ```
 
-![스크린샷 2022-11-10 오전 12.22.02.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5473d49b-c30c-4a3e-97a2-550030952137/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.22.02.png)
+<img width="290" alt="스크린샷 2022-11-10 오전 12 32 20" src="https://user-images.githubusercontent.com/79014269/200872426-c1739208-e209-44ce-9dd5-70462feb157d.png">
+
 
 ```python
 animal_hogs = []
@@ -89,7 +90,8 @@ for i in range(3):
    ax[i, j].imshow(resize(animal_features[i*5+j], (128,16)))
 ```
 
-![스크린샷 2022-11-10 오전 12.22.28.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/273283f2-fbe8-478f-90b2-0422180c845a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.22.28.png)
+<img width="528" alt="스크린샷 2022-11-10 오전 12 32 37" src="https://user-images.githubusercontent.com/79014269/200872517-6ba1e6c0-7edd-41b4-8d36-1326e1463f17.png">
+
 
 ```python
 X, y = [], []
@@ -110,8 +112,8 @@ print(y)
 ```
 
 결과 : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+<img width="520" alt="스크린샷 2022-11-10 오전 12 32 56" src="https://user-images.githubusercontent.com/79014269/200872596-c7c9fefe-0f06-4183-a0f4-a5bd3f6c73ad.png">
 
-![스크린샷 2022-11-10 오전 12.23.46.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3aaac547-752b-421c-9fe5-581f7f6eee66/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.23.46.png)
 
 ```python
 from sklearn.svm import SVC
@@ -161,7 +163,8 @@ for i in range(10):
 plot_images(2, 5, test_images)
 ```
 
-![스크린샷 2022-11-10 오전 12.25.31.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6645f4a4-d004-4083-ae7e-9797e7adcd54/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.25.31.png)
+<img width="293" alt="스크린샷 2022-11-10 오전 12 33 17" src="https://user-images.githubusercontent.com/79014269/200872679-3f4b27d2-49d9-4f23-a4c8-f6aba64e4e57.png">
+
 
 ```python
 test_hogs = []
@@ -180,7 +183,8 @@ for i in range(2):
    ax[i, j].imshow(resize(test_features[i*5+j], (128,16)), interpolation='nearest')
 ```
 
-![스크린샷 2022-11-10 오전 12.25.54.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eded026e-8c24-4deb-a26b-367307fbe41d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.25.54.png)
+<img width="520" alt="스크린샷 2022-11-10 오전 12 33 35" src="https://user-images.githubusercontent.com/79014269/200872756-7b7ac96a-a142-4f5b-bcc9-8aef82e426d9.png">
+
 
 ```python
 test_result = polynomial_svm_clf.predict(test_features)
@@ -200,4 +204,5 @@ for i in range(2):
             ax[i, j].imshow(test_images[i*5+j],interpolation='nearest')
 ```
 
-![스크린샷 2022-11-10 오전 12.26.44.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/829bb841-7cac-402c-baec-6b329451ca40/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.26.44.png)
+<img width="574" alt="스크린샷 2022-11-10 오전 12 33 54" src="https://user-images.githubusercontent.com/79014269/200872831-7e81fbf9-a415-4465-b80b-63a12ccf9f2b.png">
+
